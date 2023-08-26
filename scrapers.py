@@ -108,8 +108,7 @@ class Scraper:
         except (IndexError, KeyError):
             return
 
-        magnet_links = self._regex.findall(download_link)
-        if magnet_links:
+        if magnet_links := self._regex.findall(download_link):
             download_link = magnet_links[0]
         return {"link": download_link, "last_updated": last_updated, "website": 'freecoursesite.com'}
 
@@ -129,8 +128,7 @@ class Scraper:
         except (IndexError, KeyError):
             return
 
-        magnet_links = self._regex.findall(download_link)
-        if magnet_links:
+        if magnet_links := self._regex.findall(download_link):
             download_link = magnet_links[0]
         return {"link": download_link, "last_updated": last_updated, "website": 'freecourselab.me'}
 
@@ -151,8 +149,7 @@ class Scraper:
         except (IndexError, KeyError):
             return
 
-        magnet_links = self._regex.findall(download_link)
-        if magnet_links:
+        if magnet_links := self._regex.findall(download_link):
             download_link = magnet_links[0]
         return {"link": download_link, "last_updated": last_updated, "website": 'getfreecourses.co'}
 
@@ -173,8 +170,7 @@ class Scraper:
         except (IndexError, KeyError):
             return
 
-        magnet_links = self._regex.findall(download_link)
-        if magnet_links:
+        if magnet_links := self._regex.findall(download_link):
             download_link = magnet_links[0]
         return {"link": download_link, "last_updated": last_updated, "website": 'freecourseudemy.com'}
 
@@ -195,8 +191,7 @@ class Scraper:
         except (IndexError, KeyError):
             return
 
-        magnet_links = self._regex.findall(download_link)
-        if magnet_links:
+        if magnet_links := self._regex.findall(download_link):
             download_link = magnet_links[0]
         return {"link": download_link, "last_updated": last_updated, "website": 'paidcoursesforfree.com'}
 
@@ -217,8 +212,7 @@ class Scraper:
         except (IndexError, KeyError):
             return
 
-        magnet_links = self._regex.findall(download_link)
-        if magnet_links:
+        if magnet_links := self._regex.findall(download_link):
             download_link = magnet_links[0]
         return {"link": download_link, "last_updated": last_updated, "website": 'desirecourse.net'}
 
@@ -239,8 +233,7 @@ class Scraper:
         except (IndexError, KeyError):
             return
 
-        magnet_links = self._regex.findall(download_link)
-        if magnet_links:
+        if magnet_links := self._regex.findall(download_link):
             download_link = magnet_links[0]
         return {"link": download_link, "last_updated": last_updated, "website": 'tutorialsplanet.net'}
 
@@ -261,8 +254,7 @@ class Scraper:
         except (IndexError, KeyError):
             return
 
-        magnet_links = self._regex.findall(download_link)
-        if magnet_links:
+        if magnet_links := self._regex.findall(download_link):
             download_link = magnet_links[0]
         return {"link": download_link, "last_updated": last_updated, "website": 'myfreecourses.com'}
 
@@ -283,8 +275,7 @@ class Scraper:
         except (IndexError, KeyError):
             return
 
-        magnet_links = self._regex.findall(download_link)
-        if magnet_links:
+        if magnet_links := self._regex.findall(download_link):
             download_link = magnet_links[0]
         return {"link": download_link, "last_updated": last_updated, "website": 'udemy24.com'}
 
@@ -305,8 +296,7 @@ class Scraper:
         except (IndexError, KeyError):
             return
 
-        magnet_links = self._regex.findall(download_link)
-        if magnet_links:
+        if magnet_links := self._regex.findall(download_link):
             download_link = magnet_links[0]
         return {"link": download_link, "last_updated": last_updated, "website": 'freeallcourse.com'}
 
@@ -327,8 +317,7 @@ class Scraper:
         except (IndexError, KeyError):
             return
 
-        magnet_links = self._regex.findall(download_link)
-        if magnet_links:
+        if magnet_links := self._regex.findall(download_link):
             download_link = magnet_links[0]
         return {"link": download_link, "last_updated": last_updated, "website": 'ftuudemy.com'}
 
@@ -349,7 +338,6 @@ class Scraper:
         except (IndexError, KeyError):
             return
 
-        magnet_links = self._regex.findall(download_link)
-        if magnet_links:
+        if magnet_links := self._regex.findall(download_link):
             download_link = magnet_links[0]
         return {"link": download_link, "last_updated": last_updated, "website": 'freecoursesdownload.com'}

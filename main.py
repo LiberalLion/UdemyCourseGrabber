@@ -40,13 +40,13 @@ def command_line(udemy_url, copy_to_clipboard=False, filename="output.csv"):
     download_link = course_info[0].get("link")
     last_updated = str(course_info[0]["month"]) + "/" + str(course_info[0]["year"])
     from_website = course_info[0].get("website")
-    print("Download link: " + download_link)
-    print("Last updated: " + last_updated)
-    print("Fetched from " + from_website)
+    print(f"Download link: {download_link}")
+    print(f"Last updated: {last_updated}")
+    print(f"Fetched from {from_website}")
     if copy_to_clipboard:
         pyperclip.copy(download_link)
 
-    if not filename == "":
+    if filename != "":
         for info in course_info:
             download_link = info.get("link")
             last_updated = str(info["month"]) + "/" + str(info["year"])
